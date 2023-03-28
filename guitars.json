@@ -1,0 +1,217 @@
+[
+    {
+        "img": "aleita-1.png",
+        "brand": "aleita",
+        "type": "electric",
+        "bodyColor": "black",
+        "decade": "70s",
+        "factory": "Rostov",
+        "name": "aleita-1"
+    },
+    {
+        "img": "aleita-2.png",
+        "brand": "aeita",
+        "type": "electric",
+        "bodyColor": "black",
+        "decade": "70s",
+        "factory": "Rostov",
+        "name": "aleita-2"
+    },
+    {
+        "img": "borisov.png",
+        "brand": "borisov",
+        "type": "bass",
+        "bodyColor": "brown",
+        "decade": "80s",
+        "factory": "Borisov",
+        "name": "borisov"
+    },
+    {
+        "img": "chernigov.png",
+        "brand": "chernigov",
+        "type": "electric",
+        "bodyColor": "red",
+        "decade": "70s",
+        "factory": "Chernigov",
+        "name": "chernigov"
+    },
+    {
+        "img": "cremona.png",
+        "brand": "cremona",
+        "type": "electric",
+        "bodyColor": "red",
+        "factory": "Cremona (Czechoslovakia)",
+        "name": "cremona"
+    },
+    {
+        "img": "formanta-1.png",
+        "brand": "formanta",
+        "type": "electric",
+        "bodyColor": "red",
+        "decade": "80s",
+        "factory": "Borisov",
+        "name": "formanta-1"
+    },
+    {
+        "img": "formanta-2.png",
+        "brand": "formanta",
+        "type": "electric",
+        "bodyColor": "black",
+        "decade": "80s",
+        "factory": "Borisov",
+        "name": "formanta-2"
+    },
+    {
+        "img": "formanta-bass.png",
+        "brand": "formanta",
+        "type": "bass",
+        "bodyColor": "black",
+        "decade": "80s",
+        "factory": "Borisov",
+        "name": "formanta-bass"
+    },
+    {
+        "img": "jolana.png",
+        "brand": "jolana",
+        "type": "electric",
+        "bodyColor": "red",
+        "decade": "60s",
+        "factory": "Jolana (Czechoslovakia)",
+        "name": "jolana"
+    },
+    {
+        "img": "kavkaz-1.png",
+        "brand": "kavkaz",
+        "type": "bass",
+        "bodyColor": "black",
+        "decade": "70s",
+        "factory": "Rostov",
+        "name": "kavkaz-1"
+    },
+    {
+        "img": "kavkaz-2.png",
+        "brand": "kavkaz",
+        "type": "bass",
+        "bodyColor": "black",
+        "decade": "70s",
+        "factory": "Rostov",
+        "name": "kavkaz-2"
+    },
+    {
+        "img": "lunacharskaya.png",
+        "brand": "lunacharsky",
+        "type": "electric",
+        "bodyColor": "sunburst",
+        "decade": "70s",
+        "factory": "Lunacharsky",
+        "name": "lunacharskaya"
+    },
+    {
+        "img": "odessa-1.png",
+        "brand": "odessa",
+        "type": "bass",
+        "bodyColor": "sunburst",
+        "decade": "80s",
+        "factory": "Borisov",
+        "name": "odessa-1"
+    },
+    {
+        "img": "odessa-2.png",
+        "brand": "odessa",
+        "type": "bass",
+        "bodyColor": "sunburst",
+        "decade": "80s",
+        "factory": "Borisov",
+        "name": "odessa-2"
+    },
+    {
+        "img": "tonika-1.png",
+        "brand": "tonika",
+        "type": "electric",
+        "bodyColor": "black",
+        "decade": "60s",
+        "factory": "Rostov",
+        "name": "tonika-1"
+    },
+    {
+        "img": "tonika-2.png",
+        "brand": "tonika",
+        "type": "electric",
+        "bodyColor": "yellow",
+        "decade": "60s",
+        "factory": "Ordjonikidze",
+        "name": "tonika-2"
+    },
+    {
+        "img": "tonika-3.png",
+        "brand": "tonika",
+        "type": "electric",
+        "bodyColor": "black",
+        "decade": "60s",
+        "factory": "Ordjonikidze",
+        "name": "tonika-3"
+    },
+    {
+        "img": "trembita.png",
+        "brand": "trembita",
+        "type": "acoustic",
+        "bodyColor": "gold",
+        "decade": "50s",
+        "factory": "Trembita (Lviv)",
+        "name": "trembita"
+    },
+    {
+        "img": "ural-1.png",
+        "brand": "ural",
+        "type": "bass",
+        "bodyColor": "brown",
+        "decade": "70s",
+        "factory": "Ural (Sverdlovsk)",
+        "name": "ural-1"
+    },
+    {
+        "img": "ural-2.png",
+        "brand": "ural",
+        "type": "bass",
+        "bodyColor": "brown",
+        "decade": "70s",
+        "factory": "Ural (Sverdlovsk)",
+        "name": "ural-2"
+    },
+    {
+        "img": "ural-guitar-1.png",
+        "brand": "ural",
+        "type": "electric",
+        "bodyColor": "red",
+        "decade": "80s",
+        "factory": "Ural (Sverdlovsk)",
+        "name": "ural-guitar-1"
+    },
+    {
+        "img": "ural-guitar-2.png",
+        "brand": "ural",
+        "type": "electric",
+        "bodyColor": "black",
+        "decade": "70s",
+        "factory": "Ural (Sverdlovsk)",
+        "name": "ural-guitar-2"
+    },
+    {
+        "img": "zhitomir-1.png",
+        "brand": "zhitomir",
+        "type": "acoustic",
+        "bodyColor": "aluminum",
+        "decade": "80s",
+        "factory": "Zhitomir",
+        "name": "zhitomir-1"
+    },
+    {
+        "img": "zhitomir-2.png",
+        "brand": "zhitomir",
+        "type": "acoustic",
+        "bodyColor": "aluminum",
+        "decade": "80s",
+        "factory": "Zhitomir",
+        "name": "zhitomir-2"
+    }
+]

@@ -1,0 +1,519 @@
+@font-face {
+    font-family: "neue55";
+    src:url(fonts/NHaasGroteskTXPro-55Rg.eot);       
+ src:url(fonts/NHaasGroteskTXPro-55Rg.eot) format('embedded-opentype'),
+     url(fonts/NHaasGroteskTXPro-55Rg.ttf) format('truetype'),
+     url(fonts/NHaasGroteskTXPro-55Rg.woff) format('woff'),     
+     url(fonts/NHaasGroteskTXPro-55Rg.woff2) format('woff2'),
+     url(fonts/NHaasGroteskTXPro-55Rg.svg) format('svg');
+}
+@font-face {
+    font-family: "neue65";
+    src:url(fonts/NHaasGroteskDSPro-65Md.eot);       
+ src:url(fonts/NHaasGroteskDSPro-65Md.eot) format('embedded-opentype'),
+     url(fonts/NHaasGroteskDSPro-65Md.ttf) format('truetype'),
+     url(fonts/NHaasGroteskDSPro-65Md.woff) format('woff'),     
+     url(fonts/NHaasGroteskDSPro-65Md.woff2) format('woff2'),
+     url(fonts/NHaasGroteskDSPro-65Md.svg) format('svg');
+}
+@font-face {
+    font-family: "neue95";
+    src:url(fonts/NHaasGroteskDSPro-95Blk.eot);       
+ src:url(fonts/NHaasGroteskDSPro-95Blk.eot) format('embedded-opentype'),
+     url(fonts/NHaasGroteskDSPro-95Blk.ttf) format('truetype'),
+     url(fonts/NHaasGroteskDSPro-95Blk.woff) format('woff'),     
+     url(fonts/NHaasGroteskDSPro-95Blk.woff2) format('woff2'),
+     url(fonts/NHaasGroteskDSPro-95Blk.svg) format('svg');
+}
+
+body{
+    background-color: #faf9f5;
+    width: 100vw;
+/*    overflow: hidden;*/
+}
+.crayon{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Backgrounds/crayon-background.gif);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    z-index: 0;
+    position: fixed;
+}
+.crayon-paused{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Backgrounds/crayon-background-paused.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+    z-index: 0;
+    position: fixed;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+h1{
+    font-family: "neue95";
+    font-size: 10vw;
+    color: #ce5534;
+    letter-spacing: -.2vw;
+    line-height: 8vw;
+    text-align: right;
+}
+#title1{
+    position: absolute;
+    top: 10vw;
+    left: 3vw;
+    width: 50vw;
+    transform: rotate(-37deg); 
+}
+#title1:hover{
+    transform: rotate(-40deg);
+    transition: transform .1s ease;
+}
+h2{
+    font-family: "neue65";
+    font-size: 6vw;
+    letter-spacing: -.03vw;
+    line-height: 5vw;
+    font-weight: normal;
+}
+
+#title2{
+    position: absolute;
+    top: 26vw;
+    right: 16vw;
+    width: 42vw;
+    transform: rotate(53deg);
+}
+#title2:hover{
+    transform: rotate(55deg);
+    transition: transform .1s ease;
+}
+#landing-guitar{
+    width: 15vw;
+    height: 55vw;
+    transform: rotate(-34deg);
+    position: absolute;
+    right: 24vw;
+    top: -5vw;
+    mix-blend-mode: multiply;
+}
+h3{
+    color: #ce5534;
+    font-family: "neue65";
+    font-size: 3.5vw;
+    letter-spacing: -.01vw;
+    font-weight: normal;
+    margin: auto;
+/*    padding: 10% 0 0 0;*/
+    line-height: 2vh;
+    text-align: center; 
+}
+/*
+a{
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+}
+*/
+#enter{
+    height: 2vw;
+    width: 6vw;
+    padding: 5%;
+    background-image: url(Paper/Layer%203.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 35vw;
+    left: 35vw;
+    transform: rotate(16deg);
+    mix-blend-mode: multiply;
+}
+#enter > a {
+    width: 130%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: -20%;
+    opacity: 0%;
+    z-index: 10;
+/*    transform: rotate(-15deg);*/
+}
+#enter > a:hover{
+    opacity: 100%;
+    mix-blend-mode: multiply;
+}
+h4{
+    font-family: "neue65";
+    font-size: 40pt;
+    color: #ce5534;
+    font-weight: normal;
+    line-height: normal;
+    z-index: 10;
+    margin-bottom: none;
+}
+
+#menu{
+    color: #ce5534;
+    transform: rotate(-90deg);
+    height: auto;
+    width: 73vh;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 37%;
+    margin: 0 10vh 0 10vh;
+    left: -275px;
+    z-index: 10;
+}
+#home{
+    color: #ce5534;
+    transform: rotate(90deg);
+    height: auto;
+    width: auto;
+    position: fixed;
+/*    margin: 5vw 2vh 5vw 2vh;*/
+    top: 8%;
+    right: 1%;
+/*    padding: 0 0% 0 0%;*/
+    z-index: 10;
+}
+a{
+    text-decoration: none;
+}
+.menu-item{
+
+}
+.menu-item-clicked{
+    
+}
+.menu-item-clicked > h4{
+    color: black;
+}
+.menu-item-clicked > h4:hover{
+    color: #ce5534;
+    transition: color .1s ease;
+}
+h4:hover{
+    color: black;
+    transition: color .1s ease;
+}
+.menu-item > img{
+    width: auto;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: -7%;
+    opacity: 0%;
+    transform: rotate(180deg);
+}
+button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: "neue55";
+    font-size: 16pt;
+    text-align: left;
+}
+button:hover{
+    color: #ce5534;
+    transition: color .1s ease;
+}
+
+
+/*
+.menu-item > img:hover{
+    opacity: 100%;
+    mix-blend-mode: multiply;
+}
+*/
+#filter{
+}
+
+#about{
+    text-align: right;
+}
+.filter-menu{
+    display: none;
+}
+.show-filter{
+    display: flex;
+    position: fixed;
+    left: 5px;
+    bottom: 2%;
+    height: 167px;
+    width: 825px;
+    max-width: 78vw;
+    background-image: url(Paper/filter-menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    z-index: 9;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 9% 8% 5% 15%;
+}
+.fmenu-item{
+    height: 20%;
+    width: 22%;
+    z-index: 25;
+}
+.fmenu-item > button{
+    font-size: 12pt;
+    display: block;
+    z-index: 20;
+}
+h6{
+    font-family: "neue65";
+    font-size: 14pt;
+    margin: 0;
+}
+#menu-back{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    bottom: -2.5vh;
+    left: -5px;
+    z-index: 8;
+}
+
+#guitars{
+    height: auto;
+    width: 80vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 7vw 10vh 13vw;
+    padding: 3% 0 10% 0;
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.guitar{
+    position: relative;
+    width: 15vw;
+    min-width: 100px;
+    max-width: none;
+    max-height: 225px;
+    padding: 10% 10% 10% 10%;
+    mix-blend-mode: multiply;
+}
+.thumbnail > img:hover{
+    transform: scale(105%);
+    transition: transform .1s ease;
+    
+}
+#info-back{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: -20vw;
+    top: -5vh;
+}
+.info{
+    display: none;
+}
+.info-show{
+    position: fixed;
+    width: 60vw;
+    height: 90vh;
+    display: block;
+    z-index: 12;
+    left: 20vw;
+    top: 5vh;
+}
+.pic{
+    width: 40%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+}
+.text{
+    padding: 15% 7% 0% 7%;
+    width: 35%;
+    height: 60%;
+    background-image: url(Paper/info-card.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    position: absolute;
+    transform: rotate(-3deg);
+    left: 40%;
+    top: 10%;
+}
+.text > img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.x{
+    position: absolute;
+    height: 10%;
+    width: 10%;
+    top: 18%;
+    right: 10%
+}
+.x:hover{
+    transform: scale(120%);
+}
+#filter-menu > .x{
+    position: static;
+    height: 15%;
+    width: 15%;
+}
+h5{
+    font-family: "neue65";
+    font-size: 42pt;
+    font-weight: normal;
+    letter-spacing: -.5pt;
+    margin: 10% 0 0 0;
+}
+p{
+    font-family: "neue55";
+    font-size: 16pt;
+    letter-spacing: -.1pt;
+}
+.about-col > p{
+    font-size: 11pt;
+    letter-spacing: -.4pt;
+}
+.visible{
+    display: block;
+}
+#about-cont{
+    position: absolute;
+    width: 80vw;
+    height: 83vh;
+    top: 3vh;
+    padding: 3% 0% 3% 5%;
+    right: 3vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+#about-cont > img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+.about-col{
+    color: black;
+    width: 43%;
+    height: auto;
+    max-height: 90%;
+    overflow: scroll;
+    padding: 3%;
+    display: inline-block;
+}
+.about-col > h5{
+    margin: 0 0 0 0;
+}
+.about-col > img{
+    display: block;
+/*
+    width: 70%;
+    height: auto;
+*/
+    transform: rotate(20deg);
+    margin: auto;
+    mix-blend-mode: multiply;
+}
+p > a{
+    color: black;
+}
+p > a:hover {
+    color: #ce5534;
+    transition: color .1s ease;
+}
+#credits{
+    margin-top: 8%;
+    line-height: 12pt;
+    font-size: 9pt;
+}
+
+#texture{
+    top: -2.5vh;
+    left: -2.5vw;
+    width: 105vw;
+    height: 105vh;
+    z-index: 30;
+    mix-blend-mode: screen;
+    overflow: hidden;
+    position: fixed;
+    margin: 0;
+    pointer-events: none;
+}
+#texture > img{
+    max-height: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 940px){
+    #title1{top: 25vw}
+    #title2{top: 41vw}
+    #enter{top: 54vw}
+    #landing-guitar{top:8vh}
+    .show-filter{background-image: url(Paper/Layer%204.png); height: 530px; width: 340px; left: 20vw; top: 10vh; flex-flow: wrap; justify-content: flex-end; padding: 5%; z-index: 20}
+    .fmenu-item{width: 33%; height: auto;}
+    .fmenu-item > button{font-size: 10pt; margin: 0;}
+    #menu-back{top: -10vh; left: -20vw; height}
+}
+
+@media screen and (max-width: 750px){
+    #crayon{background-image: url(backgrounds/crayon-background-mobile.gif)}
+    h4{font-size: 30pt}
+    #menu{left: -310px; bottom: 40vh;}
+    #home{top: 3.75%}
+    .info-show{width: 80vw; left: 25vw; max-width: 300px}
+    .pic{width: 100%; height: 60%; position: static; display: flex; justify-content: center; margin-top: 10%}
+    .text{background-size: contain; width: 84%; height: 33%; position: static;
+     padding: 2% 12% 0% 15%;}
+    h5{font-size: 36pt; margin: 15% 0 0 0;}
+    p{font-size: 12pt;}
+    .x{top: 15%; right: 13%}
+    
+    }
+
+
+@media screen and (max-width: 500px){
+    #menu{left: -422px; width: 90vh; bottom: 41vh}
+    #guitars{width: 77vw; margin: 0 3% 0 17%}
+    .info-show{width: 80vw; left: 15vw; max-width: 300px}
+    h1{font-size: 18vw; letter-spacing: -.4vw; line-height: 14vw; text-align: right;}
+    #title1{position: absolute; top: 55vw; left: 9vw; width: 85vw; transform: rotate(15deg);}
+    h2{ font-family: "neue65"; font-size: 13vw; letter-spacing: -.3vw; line-height: 11vw; font-weight: normal; text-align: right;}
+    #title2{position: absolute; top: 127vw; right: -12vw; width: 90vw; transform: rotate(-75deg);}
+    #enter{height: 15vw; width: 40vw; top: 100vw; left: 14%; transform: rotate(28deg);}
+    #enter > a{top: 5%}
+    h3{font-size: 10vw;}
+    #landing-guitar{height: 95vw; width: 40vw;transform: rotate(-71deg); top: -1vh;}
+    #title1:hover{transform: rotate(13deg); transition: transform .2sec ease}
+    #title2:hover{transform: rotate(-73deg); transition: transform .2sec ease}
+    .show-filter{height: 430px; width: 280px; top: 20vh; left: 14vw; padding: 7%;}
+    fmenu-item > button{font-size: 9pt;}
+    #about-cont{flex-direction: column-reverse; height: auto; flex-flow: column-reverse; right: 0vw;}
+    #about-cont > img{display: none;}
+    .about-col{width: 90%; height: auto; overflow: hidden;}
+    .about-col > img{margin: left: 20%; max-height: 10%}
+}
+
