@@ -514,6 +514,8 @@ p > a:hover {
     #about-cont{flex-direction: column-reverse; height: auto; flex-flow: column-reverse; right: 0vw;}
     #about-cont > img{display: none;}
     .about-col{width: 90%; height: auto; overflow: hidden;}
-    .about-col > img{margin: left: 20%; max-height: 10%}
+    .about-col > img{margin: left: 20%; max-height: 10%; transform: rotate(10deg)}
 }
 
+@media screen and (max-width: 380px){#menu{left: -320px; bottom: 39vh;}
+}
