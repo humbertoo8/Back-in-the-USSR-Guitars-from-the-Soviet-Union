@@ -303,7 +303,10 @@ function freezeBackground (){
     
     background.classList.toggle('crayon');
     background.classList.toggle('crayon-paused');
+    
+    
 }
+
 
 function toggleFilterMenu() {
   const filterMenu = document.querySelector('#filter-menu');
